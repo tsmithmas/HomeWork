@@ -81,5 +81,10 @@
 // 8 -> 2, 4, 6, 8
 
 Console.Write("Введите число: ");
-int numberA = Convert.ToInt32(Console.ReadLine());
+int N = Convert.ToInt32(Console.ReadLine());
 
+for(int numberA = 1; numberA <= N; numberA++)
+{
+    if(numberA % 2 == 0)
+    Console.Write(numberA + " ");
+}
