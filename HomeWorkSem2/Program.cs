@@ -5,7 +5,7 @@
 // 918 -> 1
 
 
-Console.WriteLine("Введите трехзначное число.\nВыход из программы команда Exit.");
+Console.WriteLine("Введите трехзначное число:");
     while(true)
     {
         string input = Console.ReadLine();
