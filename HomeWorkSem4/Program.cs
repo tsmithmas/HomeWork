@@ -77,9 +77,19 @@
 int Prompt(string messege)
 {
     Console.Write(messege);
-    string readInput = Console.ReadLine();
+    string readInput = GetReadInput1();
     int result = int.Parse(readInput);
     return result;
+
+    static string? GetReadInput()
+    {
+        return Console.ReadLine();
+    }
+
+    static string? GetReadInput1()
+    {
+        return GetReadInput();
+    }
 }
 
 int[] GenerateArray(int Length, int minValue, int maxValue)
@@ -91,17 +101,6 @@ int[] GenerateArray(int Length, int minValue, int maxValue)
         array[i] = random.Next(minValue, maxValue + 1);
     }
     return array;
-} 
-
-void PrintArray(int[] array)
-{
-    Console.Write("[");
-    for (int i = 0; i < array.Length - 1; i++)
-    {
-        Console.Write(array[array.Length] + ",");
-    }
-    Console.Write(array[array.Length - 1]);
-    Console.WriteLine("]");
 }
 
 int length = Prompt("Длина массива: ");
