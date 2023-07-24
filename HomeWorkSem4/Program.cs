@@ -1,5 +1,4 @@
 ﻿// Задача 25: Напишите цикл, который принимает на вход два числа (A и B) 
-// и возводит число A в натуральную степень B.
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
@@ -74,38 +73,38 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-int Prompt(string messege)
-{
-    Console.Write(messege);
-    string readInput = GetReadInput1();
-    int result = int.Parse(readInput);
-    return result;
+// int Prompt(string messege)
+// {
+//     Console.Write(messege);
+//     string readInput = GetReadInput1();
+//     int result = int.Parse(readInput);
+//     return result;
 
-    static string? GetReadInput()
-    {
-        return Console.ReadLine();
-    }
+//     static string? GetReadInput()
+//     {
+//         return Console.ReadLine();
+//     }
 
-    static string? GetReadInput1()
-    {
-        return GetReadInput();
-    }
-}
+//     static string? GetReadInput1()
+//     {
+//         return GetReadInput();
+//     }
+// }
 
-int[] GenerateArray(int Length, int minValue, int maxValue)
-{
-    int[] array = new int[Length];
-    Random random = new Random();
-    for (int i = 0; i < Length; i++)
-    {
-        array[i] = random.Next(minValue, maxValue + 1);
-    }
-    return array;
-}
+// int[] GenerateArray(int Length, int minValue, int maxValue)
+// {
+//     int[] array = new int[Length];
+//     Random random = new Random();
+//     for (int i = 0; i < Length; i++)
+//     {
+//         array[i] = random.Next(minValue, maxValue + 1);
+//     }
+//     return array;
+// }
 
-int length = Prompt("Длина массива: ");
-int min = Prompt("Начальное значение, для диапазона случайного числа: ");
-int max = Prompt("Конечное значение, для диапазона случайного числа: ");
-int[] array = GenerateArray(length, min, max);
+// int length = Prompt("Длина массива: ");
+// int min = Prompt("Начальное значение, для диапазона случайного числа: ");
+// int max = Prompt("Конечное значение, для диапазона случайного числа: ");
+// int[] array = GenerateArray(length, min, max);
 
 // Последняя задача не очень работает=(
